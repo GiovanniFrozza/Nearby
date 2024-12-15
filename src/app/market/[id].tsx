@@ -26,7 +26,7 @@ export default function Market() {
 	const params = useLocalSearchParams<{ id: string }>();
 
 	const qrLock = useRef(false);
-;
+
 	async function fetchMarket() {
 		try {
 			const { data } = await api.get(`/markets/${params.id}`);
